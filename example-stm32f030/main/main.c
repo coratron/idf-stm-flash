@@ -12,10 +12,10 @@
 
 static const char *TAG = "MAIN";
 
-#define TXD_PIN (GPIO_NUM_23)	// TX pin to STM32
-#define RXD_PIN (GPIO_NUM_5)	// RX pin from STM32
+#define TXD_PIN (GPIO_NUM_1)	// TX pin to STM32
+#define RXD_PIN (GPIO_NUM_0)	// RX pin from STM32
 
-#define RESET_PIN (GPIO_NUM_19)
+#define RESET_PIN (GPIO_NUM_2)
 #define BOOT0_PIN (GPIO_NUM_4) 
 
 #define FIRMWARE_URL "https://github.com/mjuhanne/fyrtur-motor-board/raw/main/bin/fyrtur-0.80.bin"
