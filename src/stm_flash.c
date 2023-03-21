@@ -274,7 +274,8 @@ esp_err_t eraseTask(uint32_t size)
     {
         flashNotification(FLASH_ERASE, FLASH_STAGE_START, 0, 1, "Mass Erase Task");
         pages = 1;
-        ret = cmdMassErasePages();
+        if(cmdMassErasePages() == 1) ret = ESP_OK;
+        else ret = ESP_FAIL;
     }
     else
     {
